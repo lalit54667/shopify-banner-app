@@ -1,0 +1,28 @@
+{{ 'accordie.css' | asset_url | stylesheet_tag }}
+
+
+<details class="banner-app">
+  <summary>{{ block.settings.title }}</summary>
+  <p>{{ block.settings.content }}</p>
+</details>
+
+{% schema %}
+{
+  "name": "Accordion",
+  "target":"section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "🎉 Free Shipping on All Orders! 🎉"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content",
+      "default": "<p>Describe here your accordion</p>"
+    }
+  ]
+}
+{% endschema %}

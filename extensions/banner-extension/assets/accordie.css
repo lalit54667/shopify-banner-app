@@ -1,0 +1,27 @@
+details.banner-app {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(90deg, #ff9800, #ff5722);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 0;
+}
+
+details.banner-app summary {
+  display: flex;
+  justify-content: center; /* CENTER HORIZONTALLY */
+  align-items: center;     /* CENTER VERTICALLY (if height increases) */
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  list-style: none;
+  outline: none;
+}
